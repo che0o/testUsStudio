@@ -267,11 +267,11 @@ img {
           justify-content: space-between;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
-  padding: 0 20px;
+  width: 230px;
 }
 @media screen and (max-width: 480px) {
   .desc__prod {
-    padding: 0 15px;
+    width: 260px;
   }
 }
 

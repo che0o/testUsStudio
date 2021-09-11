@@ -71,10 +71,10 @@
     display: flex;
     justify-content:space-between ;
     flex-wrap: wrap;
-    padding: 0 20px;
+    width: 230px;
 
     @include phones {
-        padding: 0 15px;
+        width: 260px;
     }
 }
 
