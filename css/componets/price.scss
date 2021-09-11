@@ -1,0 +1,40 @@
+.price {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: right;
+    align-items: center;
+    width: 230px;
+    margin-bottom: 15px;
+
+    @include phones {
+        width: 260px;
+    }
+}
+
+.price__discout {
+    display: block;
+    width: 130px;
+    height: 23px;
+    font-size: 19px;
+    font-weight: bold;
+    line-height: 23px;
+    color: #444444;
+}
+
+.price__real {
+    display: block;
+    font-size: 13px;
+    font-weight: normal;
+    line-height: 15px;
+    text-decoration: line-through;
+    margin-left: 55px;
+    color: #888888;
+
+    @include phones {
+        margin-left: 20px;
+    }
+
+    @include tablets {
+        display: none;
+    }
+}

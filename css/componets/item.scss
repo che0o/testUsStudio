@@ -1,0 +1,158 @@
+.items__list {
+    display: flex;
+}
+.item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    min-width: 270px;
+    max-height: 387px;
+    border: 1px solid #EEEEEE;
+    border-radius: 5px;
+    background: #fff;
+    position: relative;
+    margin-right: 30px;
+
+    &:last-child {
+        margin-right: 0;
+    }
+
+    @include tablets {
+        min-width: 247px;
+    }
+
+    @include phones {
+        min-width: 290px;
+        max-height: 309px;
+    }
+}
+
+.item__title1 {
+    position: absolute;
+    background: #EEFCF6;
+    border-radius: 5px;
+    font-size: 13px;
+    line-height: 15px;
+    color: #3DDC97;
+    text-align: center;
+    padding: 5px 10px;
+
+    @include tablets {
+        display: none;
+    }
+
+    @include phones {
+        left: 0;
+        display: block;
+    }
+}
+.item__title2 {
+    position: absolute;
+    background: #FCF4ED;
+    border-radius: 5px;
+    font-size: 13px;
+    line-height: 15px;
+    color: #E49F62;
+    text-align: center;
+    padding: 5px 10px;
+    left: 100px;
+
+    @include tablets {
+        left: 20px;
+    }
+
+    @include phones {
+        top: 30px;
+        left: 0;
+    }
+}
+
+.desc__prod {
+    display: flex;
+    justify-content:space-between ;
+    flex-wrap: wrap;
+    padding: 0 20px;
+
+    @include phones {
+        padding: 0 15px;
+    }
+}
+
+.desc__spec {
+    color: #888888;
+    font-size: 13px;
+    margin-bottom: 5px;
+}
+
+.desc__title {
+    color: #444444;
+    font-weight: 400;
+    font-size: 15px;
+    margin-bottom: 0;
+}
+
+.img__star {
+    display: flex;
+    flex-wrap: nowrap;
+    justify-content: right;
+    align-items: center;
+    width: 230px;
+    font-size: 13px;
+    font-style: normal;
+    font-weight: 400;
+    color: #00ADEF;
+    margin-bottom: 34px;
+
+    @include phones {
+        width: 260px;
+        margin-bottom: 19px;
+    }
+}
+
+.img__star--pic {
+    width: 16px;
+    height: 16px;
+    margin-right: 5px;
+}
+
+.wrap__img {
+    margin-top: 20px;
+    margin-bottom: 15px;
+    height: 150px;
+
+    @include phones {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        min-width: 260px;
+        height: 98px;
+    }
+}
+
+.item__img {
+    @include phones {
+        
+        height: 98px;
+    }
+}
+
+.img__like {
+    display: none;
+    @include phones {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 40px;
+    }
+}
+
+.img__burger {
+    display: none;
+    @include phones {
+        display: block;
+        position: absolute;
+        top: 0;
+        right: 0;
+    }
+}
+

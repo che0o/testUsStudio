@@ -1,0 +1,45 @@
+.btn__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 230px;
+    margin-bottom: 20px;
+
+    @include phones {
+        width: 260px;
+    }
+
+}
+
+.btn {
+    background: #00ADEF;
+    width: 152px;
+    height: 48px;
+    border-radius: 5px;
+    border: none;
+    color: #fff;
+    font-weight: bold;
+
+    @include phones {
+        width: 260px;
+        height: 45px;
+    }
+}
+
+.like {
+    width: 20px;
+    height: 18px;
+
+    @include phones {
+        display: none;
+    }
+}
+
+.burger {
+    width: 18px;
+    height: 16px;
+    
+    @include phones {
+        display: none;
+    }
+}

@@ -1,0 +1,26 @@
+.wrap__title {
+        
+    &::after {
+        content: "";
+        display: inline-block;
+        position: absolute;
+        width: 10px;
+        height: 10px;
+        background: url(../../img/nav.svg) no-repeat;
+        top: 16px;
+        left: 210px;
+        cursor: pointer;
+
+        @include phones {
+            left: 270px;
+        }
+    }
+
+
+}
+
+.title {
+    font-weight: 300;
+    font-size: 31px;
+    line-height: 37px;
+}

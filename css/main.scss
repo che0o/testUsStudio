@@ -1,0 +1,18 @@
+@import "media";
+@import "vars";
+
+
+//normalize
+@import url("https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css");
+
+//setups
+@import url('https://fonts.googleapis.com/css2?family=Play:wght@400;700&display=swap');
+
+@import "layout";
+
+//components
+@import "./componets/btn";
+@import "./componets/title";
+@import "./componets/item";
+@import "./componets/nav-arrows";
+@import "./componets/price.scss";
